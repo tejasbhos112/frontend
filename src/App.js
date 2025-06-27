@@ -12,6 +12,7 @@ import Holidays from './pages/Holidays'
 import IntelligentDealing from './pages/IntelligentDealing'
 import MarketData from './pages/MarketData'
 import GroupDemo from './pages/GroupDemo'
+import Register from './pages/Register'
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/intelligent-dealing" element={<IntelligentDealing />} />
             <Route path="/market-data" element={<MarketData />} />
             <Route path="/group-demo" element={<GroupDemo />} />
+            <Route path="/register" element={<Register />} />
             {/* Add more routes here for other pages */}
           </Routes>
         </main>

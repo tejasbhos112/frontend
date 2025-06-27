@@ -6,6 +6,7 @@ const sidebarData = [
     label: "Login",
     children: [
       { label: "Account" },
+      { label: "Register" },
     ],
   },
   {
@@ -52,6 +53,8 @@ const Sidebar = () => {
     setActiveItem(label);
     if (label === "Account") {
       navigate("/account");
+    } else if (label === "Register") {
+      navigate("/register");
     } else if (label === "Trading Accounts") {
       navigate("/trading-accounts");
     } else if (label === "Online User") {
